@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <html lang="pt_br">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" czz-+ontent="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles/main.css">
+
+            {% block styles %}{% endblock styles %}
+
+            <link rel="stylesheet" href="styles/responsive.css">
+
+            {% block title %}
+                <title>Ecoleta</title>
+            {% endblock title %}
+
+        </head>
+
+        <body>
+            <div id="{{ pageId }}">
+                {% block content %}{% endblock content %}
+            </div>
+
+            {% block modal %}{% endblock modal %}
+
+            {% block scripts %}{% endblock scripts %}
+        </body>
+
+    </html>
